@@ -1,0 +1,373 @@
+/* PARTE SUPERIOR */
+.logueo{
+    background-color: rgb(140, 131, 145);
+    width: 100%;
+    height: 50px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: white;
+    margin-left: 95px;
+}
+
+.volver{
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 1700px;
+    padding: 5px;
+}
+
+.volver:hover{
+ color: lightgray;
+ transition: .2s ease;
+}
+
+.cerrar_icon{
+    height: 30px;
+    width: 30px;
+    opacity: 70%;
+}
+.logueo_p{
+    display: flex;
+    margin: 10px;
+}
+
+/* CSS PAGINA */
+
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    margin: 0; 
+    font-family:'Trebuchet MS'; 
+}
+
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5em; 
+}
+  
+img{
+  display: block;
+  max-width: 100%;
+}
+
+p{
+    line-height: 30px;
+    font-size: 1.1em;
+    color: #868686;
+}
+
+.cotenidonavtxt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Estilos del header*/
+.cabecera{
+    padding: 0 15px;
+    background-color: #604e81;
+}
+
+.titulodellogo{
+    color: white; 
+}
+
+/*Estilos del menu*/
+
+.menu{ 
+    list-style: none;  
+}
+
+.menuitem {
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+.menuselector:hover{
+    color: lightgray;
+    transition: .2s ease;
+}
+
+.menuselector {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+/*dentro del cuerpo va el banner*/
+
+#banner{
+    /*para que no se vean todos lo elementos*/
+    overflow: hidden;
+}
+.slider{
+    width: 100%; 
+    /*es para ordenar uno al costado del otro*/   
+    display: flex;
+    /*contenedor tiene una posicion relativa*/
+    position: relative;
+    margin-bottom: 50px;
+}
+.contenido-slider{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*cada elemento abarca el ancho de su contenendor */
+    flex-shrink: 0;
+}
+
+/*este contenedor ocuap el 80%*/
+.contenido-slider>div{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 150px;
+}
+.contenido-slider h4{
+    text-align: justify;
+    font-size: 90pt;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+#caja1{
+    background: url(./img/LECHE.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja2{
+    background: url(./img/MENESTRAS01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja3{
+    background: url(./img/ASEO.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#caja4{
+    background: url(./img/AZUCARES.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#caja1{
+    background: url(./img/LECHE.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Estilos de Main*/
+
+/*ESTILOS DE LA GALERIA*/
+  
+.galeria{
+    font-family: 'Trebuchet MS';
+    background-color: rgba(235, 233, 255, 0.918);
+    color: white;
+}
+  
+.galeria h1{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 25pt;
+    background-color: rgb(82, 71, 88); 
+}
+  
+  
+.contenedor-imagenes{   
+    width: 100%;
+    border-radius:50%;
+    padding: 40px;
+    height: 40%;
+}
+  
+.contenedor-imagenes .imagen{
+    width: 100%;
+    position: relative;
+    height:300px;
+    margin-bottom:10px;
+    box-shadow: 0px 0px 3px 0px rgba(87, 89, 238, 0.75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+  
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(110, 58, 255, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+  
+.overlay h2{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size:28pt;
+    position: absolute;
+    top: 50%;
+    left:31%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+  
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+  
+/* ESTILO APRA EL FOOTER*/
+.footer{
+    background-color: #584281;
+    color: #ffffff;
+    padding: 20px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.titulofooter{
+    font-size: 1em;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+.contenedorfooter--100-33 {
+    width: 90%; 
+}
+.autorfooter{
+    text-align: right;
+    color: #ffffff;
+    display: block;
+}
+.txtfooter{
+    font-size: 0.9em;  
+    color: white;   
+}
+.txtfooter .fa-twitter{
+    color: #3bbef5;
+    margin-right: 5px;
+}  
+.social-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.social-icon i {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.social-icon .fa-facebook-f{
+    background: #3b5998;
+}
+.social-icon .fa-twitter{
+    background: #3bbef5;
+}
+  
+.social-icon .fa-pinterest{
+    background: #e23139;
+}
+  
+.linksocial{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.contact-icon{
+    display: flex;
+    align-items: center;
+}
+.contact-icon .fas{
+    color: white;
+    display: block;
+    margin-right: 10px;
+}
+
+.contact-icon .contact__txt{
+    color: white;
+}
+  
+/*escritorio*/
+  
+@media screen and (min-width: 998px)  {
+    .menu{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: flex;
+    background: none;
+    font-size: 1.2em;
+}
+    
+.icon-menu{
+    display: none;
+}
+.banner {
+    width: 100%;
+    min-height: 550px;
+    background: url(img/PRINCIPALBANNER.png);
+}
+.banner:before {
+    min-height: 550px;
+}
+   
+.cuerpo{
+    margin-top: 540px;
+}
+
+.contenedor-imagenes{  
+    display:flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+  
+.contenedor-imagenes .imagen{
+    width: 25%;
+    position: relative;
+    height:600px;
+    margin-bottom:5px;
+}
+.titulobienvenido{
+    font-size: 3em;
+    color: #35353567;
+}
+.txtbienvenido{
+    font-size: 1.2em;
+    color: #363636b4;
+}
+.contenedorfooter--100-33 {
+    width: 33%;
+}
+  
+}
+

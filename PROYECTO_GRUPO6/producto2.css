@@ -1,0 +1,94 @@
+.modal{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+  z-index: 5;
+} 
+
+.lbl-modal{
+	background: rgb(104, 94, 165);
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.secun{
+
+  background: rgb(104, 94, 165);
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+.contenedores{
+	width: 400px;
+	height: 140px;
+	margin: auto;
+	background: rgb(104, 94, 165);
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: absolute;
+	transform: translateY(-30%);
+  z-index: 5;
+}
+
+#btn-modal:checked ~ .modal .contenedores,
+#btn-modal2:checked ~ .modal .contenedores,
+#btn-modal3:checked ~ .modal .contenedores,
+#btn-modal4:checked ~ .modal .contenedores,
+#btn-modal5:checked ~ .modal .contenedores,
+#btn-modal6:checked ~ .modal .contenedores{
+	transform: translateY(0%);
+  z-index: 50;
+  position: absolute;
+} 
+
+
+
+
+.contenido{
+	width: 100%;
+	padding: 10px; 
+}
+
+.contenido h3{
+	margin-bottom: 10px;
+  margin-top: 10px;
+}
+.contenido p{
+	margin-bottom: 7px;
+}
+#btn-modal{
+	display: none;
+}
+
+.contenedores label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}

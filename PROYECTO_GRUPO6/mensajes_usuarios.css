@@ -1,0 +1,39 @@
+.contenedor_mensajes {
+    height: auto;
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #403055;
+}
+  
+.contenedor_mensajes .title {
+    font-size: 16pt;
+    color: white;
+}
+  
+.tabla_mensajes {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+  
+.tabla_mensajes thead{
+    background-color: #351b53;
+}
+  
+.tabla_mensajes thead th {
+    padding: 10px;
+    color: white;
+}
+  
+.table-field td {
+    padding: 8px 0;
+    color: white;
+}
+
+.table-field:hover td {
+    background-color: #433b50;
+}
+  

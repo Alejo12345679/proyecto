@@ -1,0 +1,30 @@
+h5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+}
+
+.nosotros{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    font-size: 15pt;
+}
+.contenido{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.ncontenido{
+    display: flex;
+    padding: 20px;
+}
+
+img{
+    border-radius: 0px 90px 0px 90px ; 
+    margin: 20px;
+    width: 40%;
+    height: 500px;
+}

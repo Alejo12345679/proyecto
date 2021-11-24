@@ -1,0 +1,114 @@
+
+#servicios{
+    width: 100%;
+    height: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+#servicios h2{
+
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+
+.cajaservicio{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(105, 118, 194);
+    border-radius: 10PX;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    /*se indica que la animacion que haga se basa en este
+    contenedor*/
+    position: relative;
+    /*overflow es una mascara los elementos de caja se veran 
+    dentro de caja*/
+    overflow: hidden;
+
+    
+}
+
+/*para reducir ls imagenens*/
+
+.cajaservicio>img{
+    /*el alto se reduce de  forma proporcional*/
+    width: 100px;
+    margin-bottom: 10px;
+    
+}
+
+/*para darle efecto al boton*/
+
+.cajasservicio>h3{
+    margin: 10px;
+}
+
+.cajasservicio p{
+    margin: 10px;
+}
+
+
+
+/*utilizar seudoelemntos before*/
+.cajaservicio::before{
+
+    content: '';
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #3f3f3f67;
+    /*para situarse en la parte superior*/
+    top:0;
+    /*se va hasta el borde de la caja*/
+    right: 0;
+    border-radius: 20px;
+    transition:  .5s ease;
+   
+}
+
+
+.cajaservicio:hover::before{
+    width: 0px;
+}
+
+
+.cajaservicio::after{
+
+    content: '';
+    position: absolute;
+    /*quiero que solo tenga la mitad */
+    width: 50%;
+    height: 100%;
+    background-color: #3f3f3f67;
+    /*para situarse en la parte superior*/
+    top:0;
+    /*se va hasta el borde de la caja*/
+    left:0;
+    border-radius: 20px;
+    transition:  .5s ease;
+
+}
+
+/*cuando se situe sobre la lcaja*/
+.cajaservicio:hover::after{
+    width: 0px;
+}
+
+
+#servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;              
+}  
+#servicios>h2{
+    width: 100%;        
+    padding-bottom: 40px;
+}
+.cajaservicio{
+    width: 32%;
+}
